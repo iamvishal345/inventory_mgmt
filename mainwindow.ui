@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>758</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="main_save">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>360</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SAVE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_exit">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>360</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EXIT</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>758</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSTOCK">
+    <property name="title">
+     <string>STOCK</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionADD_NEW"/>
+    <addaction name="actionADJUSTMENT"/>
+    <addaction name="separator"/>
+    <addaction name="actionREPORT"/>
+   </widget>
+   <widget class="QMenu" name="menuTAX">
+    <property name="title">
+     <string>TAX</string>
+    </property>
+    <addaction name="actionTO_PAY"/>
+    <addaction name="actionDISPLAY_RECOD"/>
+    <addaction name="separator"/>
+    <addaction name="actionREPORT_3"/>
+   </widget>
+   <widget class="QMenu" name="menuUTILITY">
+    <property name="title">
+     <string>UTILITY</string>
+    </property>
+    <addaction name="actionEDIT_USERNAME_PASSWORED"/>
+    <addaction name="actionREPORT_ERROR"/>
+   </widget>
+   <widget class="QMenu" name="menuABOUT">
+    <property name="title">
+     <string>ABOUT</string>
+    </property>
+    <addaction name="actionQMIS"/>
+    <addaction name="actionUPDATE"/>
+    <addaction name="actionDEVELOPER"/>
+    <addaction name="actionHELP"/>
+   </widget>
+   <widget class="QMenu" name="menuCUSTOMER">
+    <property name="title">
+     <string>CUSTOMER</string>
+    </property>
+    <addaction name="actionADD_NEW_2"/>
+    <addaction name="actionEDIT_EXISTING"/>
+    <addaction name="actionCHECK_RECORD"/>
+    <addaction name="actionREPORT_2"/>
+   </widget>
+   <widget class="QMenu" name="menuVEHICLE">
+    <property name="title">
+     <string>VEHICLE</string>
+    </property>
+    <addaction name="actionADD_NEW_3"/>
+    <addaction name="actionEDIT_EXISTING_2"/>
+    <addaction name="actionREPORT_4"/>
+   </widget>
+   <widget class="QMenu" name="menuSUPPLIERS">
+    <property name="title">
+     <string>SUPPLIERS</string>
+    </property>
+    <addaction name="actionADD_NEW_4"/>
+    <addaction name="actionEDIT_EXIXTING"/>
+    <addaction name="actionEport"/>
+   </widget>
+   <addaction name="menuSTOCK"/>
+   <addaction name="menuCUSTOMER"/>
+   <addaction name="menuVEHICLE"/>
+   <addaction name="menuSUPPLIERS"/>
+   <addaction name="menuTAX"/>
+   <addaction name="menuUTILITY"/>
+   <addaction name="menuABOUT"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionADD_NEW">
+   <property name="text">
+    <string>ADD NEW ITEM</string>
+   </property>
+  </action>
+  <action name="actionADJUSTMENT">
+   <property name="text">
+    <string>STOCK ADJUSTMENT</string>
+   </property>
+  </action>
+  <action name="actionREPORT">
+   <property name="text">
+    <string>REPORT</string>
+   </property>
+  </action>
+  <action name="actionDISPLAY_ECORD">
+   <property name="text">
+    <string>DISPLAY ECORD</string>
+   </property>
+  </action>
+  <action name="actionEDIT_USERNAME_PASSWORED">
+   <property name="text">
+    <string>EDIT USERNAME PASSWORED</string>
+   </property>
+  </action>
+  <action name="actionADD_SALESMAN">
+   <property name="text">
+    <string>ADD SALESMAN</string>
+   </property>
+  </action>
+  <action name="actionQMIS">
+   <property name="text">
+    <string>QIMS</string>
+   </property>
+  </action>
+  <action name="actionUPDATE">
+   <property name="text">
+    <string>UPDATE</string>
+   </property>
+  </action>
+  <action name="actionDEVELOPER">
+   <property name="text">
+    <string>DEVELOPER</string>
+   </property>
+  </action>
+  <action name="actionTO_PAY">
+   <property name="text">
+    <string>TO PAY</string>
+   </property>
+  </action>
+  <action name="actionDISPLAY_RECOD">
+   <property name="text">
+    <string>DISPLAY RECROD</string>
+   </property>
+  </action>
+  <action name="actionREPORT_ERROR">
+   <property name="text">
+    <string>REPORT ERROR</string>
+   </property>
+  </action>
+  <action name="actionADD_NEW_2">
+   <property name="text">
+    <string>ADD NEW </string>
+   </property>
+  </action>
+  <action name="actionEDIT_EXISTING">
+   <property name="text">
+    <string>EDIT EXISTING</string>
+   </property>
+  </action>
+  <action name="actionCHECK_RECORD">
+   <property name="text">
+    <string>DISPLAY RECORD</string>
+   </property>
+  </action>
+  <action name="actionREPORT_2">
+   <property name="text">
+    <string>REPORT</string>
+   </property>
+  </action>
+  <action name="actionREPORT_3">
+   <property name="text">
+    <string>REPORT</string>
+   </property>
+  </action>
+  <action name="actionHELP">
+   <property name="text">
+    <string>HELP</string>
+   </property>
+  </action>
+  <action name="actionADD_NEW_3">
+   <property name="text">
+    <string>ADD NEW</string>
+   </property>
+  </action>
+  <action name="actionEDIT_EXISTING_2">
+   <property name="text">
+    <string>EDIT EXISTING</string>
+   </property>
+  </action>
+  <action name="actionREPORT_4">
+   <property name="text">
+    <string>REPORT</string>
+   </property>
+  </action>
+  <action name="actionADD_NEW_4">
+   <property name="text">
+    <string>ADD NEW</string>
+   </property>
+  </action>
+  <action name="actionEDIT_EXIXTING">
+   <property name="text">
+    <string>EDIT EXIXTING</string>
+   </property>
+  </action>
+  <action name="actionEport">
+   <property name="text">
+    <string>REPORT</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
