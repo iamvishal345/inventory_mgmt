@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     addnew_customer.cpp \
     customer_drecord.cpp \
     formlogin.cpp \
-    customer_edit.cpp
+    customer_edit.cpp \
+    editusername.cpp
 
 HEADERS  += mainwindow.h \
     new_item.h \
@@ -27,14 +28,16 @@ HEADERS  += mainwindow.h \
     addnew_customer.h \
     customer_drecord.h \
     formlogin.h \
-    customer_edit.h
+    customer_edit.h \
+    editusername.h
 
 FORMS    += mainwindow.ui \
     new_item.ui \
     adjust.ui \
     addnew_customer.ui \
     customer_drecord.ui \
-    customer_edit.ui
+    customer_edit.ui \
+    editusername.ui
 
 RESOURCES += \
     icons.qrc

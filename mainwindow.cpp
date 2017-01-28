@@ -6,8 +6,8 @@
 #include "addnew_customer.h"
 #include "customer_drecord.h"
 #include "customer_edit.h"
-
-
+#include "QWidget"
+#include "editusername.h"
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -62,4 +62,21 @@ void MainWindow::on_actionEDIT_EXISTING_triggered()
    customer_edit customer_edit;
    customer_edit.setModal(true);
    customer_edit.exec();
+}
+
+void MainWindow::on_actionREPORT_ERROR_triggered()
+{
+    QMessageBox::information(this, tr("Error"),tr("Not Supported yet"));
+}
+
+void MainWindow::on_main_exit_clicked()
+{
+    QCoreApplication::quit();
+}
+
+void MainWindow::on_actionEDIT_USERNAME_PASSWORED_triggered()
+{
+    editusername editusername;
+    editusername.setModal(true);
+    editusername.exec();
 }

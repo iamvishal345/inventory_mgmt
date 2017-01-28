@@ -51,14 +51,16 @@ FORMLOGIN::FORMLOGIN(QWidget *parent)
      QString username =userLineEdit->text();
      QString password = userLineEdit->text();
   //  if (username == "root" && password == "word")
-         this->destroy();
-   // if (username.isEmpty() || password.isEmpty())
-     //  {  QMessageBox::Information(this,tr("Error!"),"Username or Password can not be empty");
-      // }
-   //  else
-   //   {  // QMessageBox::Information(this,tr("Error!"),"Username or Password is Wrong");
-    //    this->destroy();
-     }
+
+    if (username.isEmpty() && password.isEmpty())
+    {     QMessageBox::warning(this,tr("Error!"),tr("Username or Password can not be empty"));
+    }
+    if (username == "test" && password == "test")
+        this->destroy();
+    else
+      QMessageBox::warning(this,tr("Error"),tr("Username or Password is Wrong"));
+   }
+
 
  FORMLOGIN::~FORMLOGIN(){}
 

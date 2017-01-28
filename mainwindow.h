@@ -29,6 +29,12 @@ private slots:
 
     void on_actionEDIT_EXISTING_triggered();
 
+    void on_actionREPORT_ERROR_triggered();
+
+    void on_main_exit_clicked();
+
+    void on_actionEDIT_USERNAME_PASSWORED_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
