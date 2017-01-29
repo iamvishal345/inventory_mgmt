@@ -20,7 +20,12 @@ SOURCES += main.cpp\
     customer_drecord.cpp \
     formlogin.cpp \
     customer_edit.cpp \
-    editusername.cpp
+    editusername.cpp \
+    addnewvehicle.cpp \
+    editvehicle.cpp \
+    vehicle_record.cpp \
+    stock_record.cpp \
+    addnew_supplier.cpp
 
 HEADERS  += mainwindow.h \
     new_item.h \
@@ -29,7 +34,12 @@ HEADERS  += mainwindow.h \
     customer_drecord.h \
     formlogin.h \
     customer_edit.h \
-    editusername.h
+    editusername.h \
+    addnewvehicle.h \
+    editvehicle.h \
+    vehicle_record.h \
+    stock_record.h \
+    addnew_supplier.h
 
 FORMS    += mainwindow.ui \
     new_item.ui \
@@ -37,7 +47,12 @@ FORMS    += mainwindow.ui \
     addnew_customer.ui \
     customer_drecord.ui \
     customer_edit.ui \
-    editusername.ui
+    editusername.ui \
+    addnewvehicle.ui \
+    editvehicle.ui \
+    vehicle_record.ui \
+    stock_record.ui \
+    addnew_supplier.ui
 
 RESOURCES += \
     icons.qrc

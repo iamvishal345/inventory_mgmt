@@ -24,9 +24,6 @@
    <item row="0" column="2">
     <widget class="QLineEdit" name="c_id"/>
    </item>
-   <item row="1" column="0" colspan="4">
-    <widget class="QListView" name="cdeatail_output"/>
-   </item>
    <item row="2" column="0">
     <widget class="QLabel" name="label_2">
      <property name="text">
@@ -64,6 +61,16 @@
      </property>
      <property name="standardButtons">
       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="4">
+    <widget class="QListView" name="cdeatail_output"/>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="pb_customersearch">
+     <property name="text">
+      <string>SEARCH</string>
      </property>
     </widget>
    </item>

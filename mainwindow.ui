@@ -54,9 +54,9 @@
     <property name="title">
      <string>STOCK</string>
     </property>
-    <addaction name="separator"/>
     <addaction name="actionADD_NEW"/>
     <addaction name="actionADJUSTMENT"/>
+    <addaction name="actionDISPLAY_RECORD_3"/>
     <addaction name="separator"/>
     <addaction name="actionREPORT"/>
    </widget>
@@ -91,7 +91,9 @@
     </property>
     <addaction name="actionADD_NEW_2"/>
     <addaction name="actionEDIT_EXISTING"/>
+    <addaction name="actionPAYMENT_RECORD"/>
     <addaction name="actionCHECK_RECORD"/>
+    <addaction name="separator"/>
     <addaction name="actionREPORT_2"/>
    </widget>
    <widget class="QMenu" name="menuVEHICLE">
@@ -100,7 +102,10 @@
     </property>
     <addaction name="actionADD_NEW_3"/>
     <addaction name="actionEDIT_EXISTING_2"/>
+    <addaction name="actionDISPLAY_RECORD_2"/>
+    <addaction name="separator"/>
     <addaction name="actionREPORT_4"/>
+    <addaction name="actionGOODS_AND_PAYMENT"/>
    </widget>
    <widget class="QMenu" name="menuSUPPLIERS">
     <property name="title">
@@ -108,6 +113,9 @@
     </property>
     <addaction name="actionADD_NEW_4"/>
     <addaction name="actionEDIT_EXIXTING"/>
+    <addaction name="actionPAYMENTS"/>
+    <addaction name="actionDISPLAY_RECORD"/>
+    <addaction name="separator"/>
     <addaction name="actionEport"/>
    </widget>
    <addaction name="menuSTOCK"/>
@@ -237,6 +245,36 @@
   <action name="actionEport">
    <property name="text">
     <string>REPORT</string>
+   </property>
+  </action>
+  <action name="actionDISPLAY_RECORD">
+   <property name="text">
+    <string>DISPLAY RECORD</string>
+   </property>
+  </action>
+  <action name="actionDISPLAY_RECORD_2">
+   <property name="text">
+    <string>DISPLAY RECORD</string>
+   </property>
+  </action>
+  <action name="actionDISPLAY_RECORD_3">
+   <property name="text">
+    <string>DISPLAY RECORD</string>
+   </property>
+  </action>
+  <action name="actionPAYMENT_RECORD">
+   <property name="text">
+    <string>PAYMENTS</string>
+   </property>
+  </action>
+  <action name="actionGOODS_AND_PAYMENT">
+   <property name="text">
+    <string>GOODS AND PAYMENT</string>
+   </property>
+  </action>
+  <action name="actionPAYMENTS">
+   <property name="text">
+    <string>PAYMENTS</string>
    </property>
   </action>
  </widget>

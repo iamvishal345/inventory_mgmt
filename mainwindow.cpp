@@ -8,6 +8,11 @@
 #include "customer_edit.h"
 #include "QWidget"
 #include "editusername.h"
+#include "addnewvehicle.h"
+#include "editvehicle.h"
+#include "vehicle_record.h"
+#include "stock_record.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -94,4 +99,32 @@ void MainWindow::on_actionDEVELOPER_triggered()
 void MainWindow::on_actionHELP_triggered()
 {
     QMessageBox::information(this,tr("HELP"),tr("Contact 9816120038"));
+}
+
+void MainWindow::on_actionADD_NEW_3_triggered()
+{
+    addnewvehicle addnewvehicle;
+    addnewvehicle.setModal(true);
+    addnewvehicle.exec();
+}
+
+void MainWindow::on_actionEDIT_EXISTING_2_triggered()
+{
+    editvehicle editvehicle;
+    editvehicle.setModal(true);
+    editvehicle.exec();
+}
+
+void MainWindow::on_actionDISPLAY_RECORD_2_triggered()
+{
+    vehicle_record vehicle_record;
+    vehicle_record.setModal(true);
+    vehicle_record.exec();
+}
+
+void MainWindow::on_actionDISPLAY_RECORD_3_triggered()
+{
+    stock_record stock_record;
+    stock_record.setModal(true);
+    stock_record.exec();
 }
