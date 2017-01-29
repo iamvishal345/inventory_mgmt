@@ -21,9 +21,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
     resize(QDesktopWidget().availableGeometry(this).size() * 0.8);
-   // QPixmap pix(":/1.png");
-  //  ui->label->setStyleSheet("border-image:url(:/image/Untitled-2.jpg);");
-   // ui->label->setPixmap(pix);
+   
 }
 
 MainWindow::~MainWindow()

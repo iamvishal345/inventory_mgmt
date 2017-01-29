@@ -12,4 +12,7 @@ int main(int argc, char *argv[])
     mainWindow->show();
     a.setWindowIcon(QIcon("D:/Sofwares/icon/rar_256.ico"));
     return a.exec();
+    QWidget *w = new QWidget;
+    w->setStyleSheet("background-image:url(:/image/QIMS.png");
+    return a.exec();
 }
