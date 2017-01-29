@@ -23,7 +23,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_actionQMIS_triggered()
 {
-    QMessageBox::information(this , tr("QIMS"), tr("QIMS version 1.0"));
+    QMessageBox::information(this , tr("QIMS"), tr("Inventory managment system."),tr("Developed BY VISHAL AGNIHOTRI"));
 }
 
 void MainWindow::on_actionADD_NEW_triggered()
@@ -79,19 +79,4 @@ void MainWindow::on_actionEDIT_USERNAME_PASSWORED_triggered()
     editusername editusername;
     editusername.setModal(true);
     editusername.exec();
-}
-
-void MainWindow::on_actionUPDATE_triggered()
-{
- QMessageBox::information(this,tr("UPDATE"),tr("Software Upto Date"));
-}
-
-void MainWindow::on_actionDEVELOPER_triggered()
-{
-    QMessageBox::information(this,tr("DEVELOPER"),tr("Vishal Agnihotri\n" "Kartik Narwal"));
-}
-
-void MainWindow::on_actionHELP_triggered()
-{
-    QMessageBox::information(this,tr("HELP"),tr("Contact 9816120038"));
 }
