@@ -49,6 +49,8 @@ private slots:
 
     void on_actionDISPLAY_RECORD_3_triggered();
 
+    void on_actionADD_NEW_4_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

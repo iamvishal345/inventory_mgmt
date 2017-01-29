@@ -25,7 +25,8 @@ SOURCES += main.cpp\
     editvehicle.cpp \
     vehicle_record.cpp \
     stock_record.cpp \
-    addnew_supplier.cpp
+    addnew_supplier.cpp \
+    edit_supplier.cpp
 
 HEADERS  += mainwindow.h \
     new_item.h \
@@ -39,7 +40,8 @@ HEADERS  += mainwindow.h \
     editvehicle.h \
     vehicle_record.h \
     stock_record.h \
-    addnew_supplier.h
+    addnew_supplier.h \
+    edit_supplier.h
 
 FORMS    += mainwindow.ui \
     new_item.ui \
@@ -52,7 +54,8 @@ FORMS    += mainwindow.ui \
     editvehicle.ui \
     vehicle_record.ui \
     stock_record.ui \
-    addnew_supplier.ui
+    addnew_supplier.ui \
+    edit_supplier.ui
 
 RESOURCES += \
     icons.qrc \

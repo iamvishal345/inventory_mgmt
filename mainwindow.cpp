@@ -12,6 +12,7 @@
 #include "editvehicle.h"
 #include "vehicle_record.h"
 #include "stock_record.h"
+#include "addnew_supplier.h"
 #include <QDesktopWidget>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -21,9 +22,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
     resize(QDesktopWidget().availableGeometry(this).size() * 0.8);
-   // QPixmap pix(":/1.png");
-  //  ui->label->setStyleSheet("border-image:url(:/image/Untitled-2.jpg);");
-   // ui->label->setPixmap(pix);
+
 }
 
 MainWindow::~MainWindow()
@@ -135,3 +134,10 @@ void MainWindow::on_actionDISPLAY_RECORD_3_triggered()
 }
 
 
+
+void MainWindow::on_actionADD_NEW_4_triggered()
+{
+    addnew_supplier addnew_supplier;
+    addnew_supplier.setModal(true);
+    addnew_supplier.exec();
+}
