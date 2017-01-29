@@ -55,4 +55,5 @@ FORMS    += mainwindow.ui \
     addnew_supplier.ui
 
 RESOURCES += \
-    icons.qrc
+    icons.qrc \
+    image.qrc
