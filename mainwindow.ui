@@ -14,30 +14,30 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="main_exit">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>340</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EXIT</string>
+    </property>
+   </widget>
    <widget class="QPushButton" name="main_save">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>360</y>
+      <x>420</x>
+      <y>340</y>
       <width>151</width>
       <height>51</height>
      </rect>
     </property>
     <property name="text">
      <string>SAVE</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="main_exit">
-    <property name="geometry">
-     <rect>
-      <x>620</x>
-      <y>360</y>
-      <width>131</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>EXIT</string>
     </property>
    </widget>
   </widget>
@@ -141,7 +141,7 @@
   </action>
   <action name="actionEDIT_USERNAME_PASSWORED">
    <property name="text">
-    <string>EDIT USERNAME PASSWORED</string>
+    <string>EDIT USERNAME PASSWORD</string>
    </property>
   </action>
   <action name="actionADD_SALESMAN">

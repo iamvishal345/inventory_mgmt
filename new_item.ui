@@ -13,114 +13,58 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QDialogButtonBox" name="buttonBox">
-   <property name="geometry">
-    <rect>
-     <x>9</x>
-     <y>269</y>
-     <width>166</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>61</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Code</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>50</y>
-     <width>51</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Name</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>100</y>
-     <width>71</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Price Per Unit</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>145</y>
-     <width>51</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Stock</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="newi_code">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>10</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="newi_name">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>60</y>
-     <width>201</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="newi_price">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>100</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="newi_stock">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>140</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Code</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="newi_code"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="newi_name"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Price Per Unit</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="newi_price"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Stock</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="newi_stock"/>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections>

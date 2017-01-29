@@ -15,6 +15,9 @@ public:
     explicit editusername(QWidget *parent = 0);
     ~editusername();
 
+private slots:
+    void on_buttonBox_accepted();
+
 private:
     Ui::editusername *ui;
 };

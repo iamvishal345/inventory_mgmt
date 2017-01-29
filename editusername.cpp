@@ -12,3 +12,8 @@ editusername::~editusername()
 {
     delete ui;
 }
+
+void editusername::on_buttonBox_accepted()
+{
+
+}
