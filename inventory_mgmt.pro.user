@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.2.0, 2017-01-29T10:19:03. -->
+<!-- Written by QtCreator 4.2.0, 2017-01-29T12:58:08. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{b4bee44c-b09b-4334-a1e0-ade24c0b006b}</value>
+  <value type="QByteArray">{31c726eb-96d4-4f31-b066-5f4b04485bcd}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -286,7 +286,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">inventory_mgmt</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">inventory_mgmt2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:E:/inventory_mgmt/inventory_mgmt.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:G:/inventory_mgmt/inventory_mgmt.pro</value>
     <value type="bool" key="QmakeProjectManager.QmakeRunConfiguration.UseLibrarySearchPath">true</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">inventory_mgmt.pro</value>
