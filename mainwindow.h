@@ -35,12 +35,6 @@ private slots:
 
     void on_actionEDIT_USERNAME_PASSWORED_triggered();
 
-    void on_actionUPDATE_triggered();
-
-    void on_actionDEVELOPER_triggered();
-
-    void on_actionHELP_triggered();
-
 private:
     Ui::MainWindow *ui;
 };
