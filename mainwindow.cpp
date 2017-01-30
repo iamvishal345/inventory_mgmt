@@ -13,7 +13,14 @@
 #include "vehicle_record.h"
 #include "stock_record.h"
 #include "addnew_supplier.h"
+#include "customer_payments.h"
+#include "vehicle_payment.h"
+#include "supplier_edit.h"
+#include "supplier_payment.h"
+#include "supplier_record.h"
 #include <QDesktopWidget>
+#include <QTimer>
+#include <QDateTime>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -21,10 +28,19 @@ MainWindow::MainWindow(QWidget *parent) :
 {
 
     ui->setupUi(this);
+    QTimer *timer=new QTimer(this);
+    connect (timer , SIGNAL(timeout()),this,SLOT(showTime()));
+            timer->start();
     resize(QDesktopWidget().availableGeometry(this).size() * 0.8);
 
 }
+void MainWindow::showTime()
+{
+    QTime time = QTime::currentTime();
+    QString time_text = time.toString("hh : mm : ss");
+    ui->DigitalClock->setText(time_text);
 
+}
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -140,4 +156,44 @@ void MainWindow::on_actionADD_NEW_4_triggered()
     addnew_supplier addnew_supplier;
     addnew_supplier.setModal(true);
     addnew_supplier.exec();
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    QCoreApplication::quit();
+}
+
+void MainWindow::on_actionGOODS_AND_PAYMENT_triggered()
+{
+    vehicle_payment vehicle_payment;
+    vehicle_payment.setModal(true);
+    vehicle_payment.exec();
+}
+
+void MainWindow::on_actionPAYMENTS_2_triggered()
+{
+    customer_payments customer_payments;
+    customer_payments.setModal(true);
+    customer_payments.exec();
+}
+
+void MainWindow::on_actionEDIT_EXIXTING_triggered()
+{
+    supplier_edit supplier_edit;
+    supplier_edit.setModal(true);
+    supplier_edit.exec();
+}
+
+void MainWindow::on_actionPAYMENTS_triggered()
+{
+    supplier_payment supplier_payment;
+    supplier_payment.setModal(true);
+    supplier_payment.exec();
+}
+
+void MainWindow::on_actionDISPLAY_RECORD_triggered()
+{
+    supplier_record supplier_record;
+    supplier_record.setModal(true);
+    supplier_record.exec();
 }

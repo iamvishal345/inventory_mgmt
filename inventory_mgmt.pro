@@ -5,6 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += sql
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,7 +28,12 @@ SOURCES += main.cpp\
     vehicle_record.cpp \
     stock_record.cpp \
     addnew_supplier.cpp \
-    edit_supplier.cpp
+    edit_supplier.cpp \
+    customer_payments.cpp \
+    vehicle_payment.cpp \
+    supplier_edit.cpp \
+    supplier_payment.cpp \
+    supplier_record.cpp
 
 HEADERS  += mainwindow.h \
     new_item.h \
@@ -41,7 +48,12 @@ HEADERS  += mainwindow.h \
     vehicle_record.h \
     stock_record.h \
     addnew_supplier.h \
-    edit_supplier.h
+    edit_supplier.h \
+    customer_payments.h \
+    vehicle_payment.h \
+    supplier_edit.h \
+    supplier_payment.h \
+    supplier_record.h
 
 FORMS    += mainwindow.ui \
     new_item.ui \
@@ -55,7 +67,12 @@ FORMS    += mainwindow.ui \
     vehicle_record.ui \
     stock_record.ui \
     addnew_supplier.ui \
-    edit_supplier.ui
+    edit_supplier.ui \
+    customer_payments.ui \
+    vehicle_payment.ui \
+    supplier_edit.ui \
+    supplier_payment.ui \
+    supplier_record.ui
 
 RESOURCES += \
     icons.qrc \

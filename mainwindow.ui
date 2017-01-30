@@ -50,6 +50,22 @@ background-color: rgb(85, 0, 0);</string>
      </rect>
     </property>
    </widget>
+   <widget class="QLabel" name="DigitalClock">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>0</y>
+      <width>211</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 16pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -101,7 +117,7 @@ background-color: rgb(85, 0, 0);</string>
     </property>
     <addaction name="actionADD_NEW_2"/>
     <addaction name="actionEDIT_EXISTING"/>
-    <addaction name="actionPAYMENT_RECORD"/>
+    <addaction name="actionPAYMENTS_2"/>
     <addaction name="actionCHECK_RECORD"/>
     <addaction name="separator"/>
     <addaction name="actionREPORT_2"/>
@@ -113,9 +129,9 @@ background-color: rgb(85, 0, 0);</string>
     <addaction name="actionADD_NEW_3"/>
     <addaction name="actionEDIT_EXISTING_2"/>
     <addaction name="actionDISPLAY_RECORD_2"/>
+    <addaction name="actionGOODS_AND_PAYMENT"/>
     <addaction name="separator"/>
     <addaction name="actionREPORT_4"/>
-    <addaction name="actionGOODS_AND_PAYMENT"/>
    </widget>
    <widget class="QMenu" name="menuSUPPLIERS">
     <property name="title">
@@ -283,6 +299,11 @@ background-color: rgb(85, 0, 0);</string>
    </property>
   </action>
   <action name="actionPAYMENTS">
+   <property name="text">
+    <string>PAYMENTS</string>
+   </property>
+  </action>
+  <action name="actionPAYMENTS_2">
    <property name="text">
     <string>PAYMENTS</string>
    </property>

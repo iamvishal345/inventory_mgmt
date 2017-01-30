@@ -51,6 +51,22 @@ private slots:
 
     void on_actionADD_NEW_4_triggered();
 
+    void on_pushButton_clicked();
+
+    void on_actionPAYMENT_RECORD_triggered();
+
+    void on_actionGOODS_AND_PAYMENT_triggered();
+
+    void showTime();
+
+    void on_actionPAYMENTS_2_triggered();
+
+    void on_actionEDIT_EXIXTING_triggered();
+
+    void on_actionPAYMENTS_triggered();
+
+    void on_actionDISPLAY_RECORD_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
